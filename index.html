@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tweetable Liberty Quotes</title>
+    <title>Tweetable Quotes</title>
 
     <!-- favicon (image in the tab) -->
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="newQuote()">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="newQuoteAPI()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -76,12 +76,15 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div style="width: 400px; margin: auto;">
-                        <em><p id="quoteDisplay">Click below for a new quote</p></em>
+                    <div style="width: 375px; margin: auto;">
+                        <em><p id="quoteDisplay">Quote Processing</p></em>
                         <b><p id="authorDisplay" class="intro-text" style="text-align: right">Author</p></b>
                         <div>
-                            <a onclick="newQuote()" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-fw"></i> <span class="network-name">new quote</span></a>
+                            <a onclick="newQuoteAPI()" class="btn btn-default btn-lg"><i class="fa fa-refresh fa-fw"></i> <span class="network-name">new quote</span></a>
                             <a onclick="tweetIt()" href="https://twitter.com/share" data-text="lots of words" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Tweet it</span></a>
+                        </div>
+                        <div>
+                            <p style="font-size: 8px"><a href ="http://www.quotzzy.co/api/">Quotes generation from http://www.quotzzy.co/api/</a></p>
                         </div>
                     </div>
                 </div>
